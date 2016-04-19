@@ -17,6 +17,9 @@ sudo apt-get upgrade -y
 
 sudo apt-get install -y git pkg-config autoconf libtool
 sudo apt-get install -y libffi-dev expat libexpat1-dev  libxml2-dev
+sudo apt-get install -y bison flex python python-pip python-dev
+
+sudo pip install  mako
 
 # install wayland
 TOP=`pwd`
