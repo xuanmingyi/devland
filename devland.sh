@@ -19,9 +19,17 @@ sudo apt-get install -y git pkg-config autoconf libtool
 sudo apt-get install -y libffi-dev expat libexpat1-dev  libxml2-dev
 
 # install wayland
+TOP=`pwd`
 
+cd $TOP
 git clone ~/packages/wayland.git
 cd wayland
 ./autogen.sh --prefix=/usr --disable-documentation
 make
+sudo make install
+
+cd $TOP
+git clone ~/packages/wayland-protocols
+cd wayland-protocols
+./autogen.sh --prefix=/usr
 sudo make install
