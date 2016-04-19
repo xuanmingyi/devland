@@ -24,3 +24,4 @@ git clone ~/packages/wayland.git
 cd wayland
 ./autogen.sh --prefix=/usr --disable-documentation
 make
+sudo make install
