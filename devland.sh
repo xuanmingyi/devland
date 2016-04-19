@@ -33,7 +33,7 @@ export ACLOCAL="aclocal -I $ACLOCAL_PATH"
 mkdir -p $WLD/share/aclocal # needed by autotools
 fi
 
-sudo apt-get install git pkg-config autoconf libtool
+sudo apt-get install -y git pkg-config autoconf libtool
 
 
 # install wayland
